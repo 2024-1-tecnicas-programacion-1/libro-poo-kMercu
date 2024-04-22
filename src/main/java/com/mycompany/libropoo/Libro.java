@@ -25,7 +25,6 @@ public class Libro {
         return impr;
     }
 
-    
     public void marcarLeido() {
         this.read = true;
     }
@@ -40,8 +39,5 @@ public class Libro {
         } else {
         return false;
         }
-        
-        
     }
-
 }

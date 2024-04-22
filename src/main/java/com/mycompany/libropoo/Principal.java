@@ -8,6 +8,9 @@ public class Principal {
 
         System.out.println("Ingrese el título del libro:");
         String title = sc.nextLine();
+        
+        System.out.println("Ingrese el genero del libro:");
+        String genre = sc.nextLine();
 
         System.out.println("Ingrese el autor del libro:");
         String author = sc.nextLine();
@@ -16,7 +19,7 @@ public class Principal {
         int yearOfPublication = sc.nextInt();
 
 
-        Libro libro = new Libro(title, author, yearOfPublication);
+        Libro libro = new Libro(title, author, yearOfPublication, genre);
             libro.marcarLeido();
 
         System.out.println(libro.mostrarInformacion());
