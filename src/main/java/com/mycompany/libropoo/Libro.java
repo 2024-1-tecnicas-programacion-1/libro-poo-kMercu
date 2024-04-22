@@ -8,6 +8,9 @@ public class Libro {
     private boolean read;
 
     // Constructor de la clase
+    /**
+     * Complejidad temporal: O(1) - Tiempo constante.
+     */
     public Libro(String title, String author, int yearOfPublication, String genre) {
         this.title = title;
         this.genre = genre;
@@ -21,18 +24,27 @@ public class Libro {
      */
     public String mostrarInformacion() {
         String impr = "Título: " + title + ", Autor: " + author + ", Año de publicación: " 
-                + yearOfPublication + ",Genero:" + genre + "Leído: " + (read ? "Sí" : "No");
+                + yearOfPublication + ", Leído: " + (read ? "Sí" : "No");
         return impr;
     }
-
+    
+    /**
+     * Complejidad temporal: O(1) - Tiempo constante.
+     */
     public void marcarLeido() {
         this.read = true;
     }
     
+    /**
+     * Complejidad temporal: O(1) - Tiempo constante.
+     */
     public boolean getLeido(){
         return read;
     }
     
+    /**
+     * Complejidad temporal: O(1) - Tiempo constante.
+     */
     public boolean esAntiguo() {
         if (yearOfPublication<1974){
         return true;

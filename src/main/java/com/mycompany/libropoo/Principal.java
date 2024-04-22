@@ -2,7 +2,12 @@ package com.mycompany.libropoo;
 
 import java.util.Scanner;
 
+
 public class Principal {
+    
+    /**
+    * Complejidad lineal: O(N) - Tiempo lineal.
+    */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
